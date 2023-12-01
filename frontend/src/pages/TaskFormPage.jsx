@@ -12,7 +12,7 @@ const TaskFormPage = () => {
   const onSubmit = handleSubmit(async data => {
     if (params.id) {
       await updateTask(params.id, data)
-      toast.success('Tarea Actualizada', {
+      toast.success('Updated Task', {
         position: 'bottom-right',
         style: {
           background: "#101010",
@@ -21,7 +21,7 @@ const TaskFormPage = () => {
       })
     } else {
       await createTask(data)
-      toast.success('Tarea Creada', {
+      toast.success('OK', {
         position: 'bottom-right',
         style: {
           background: "#101010",
